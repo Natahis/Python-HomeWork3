@@ -10,7 +10,6 @@ num = int(input('Введите целое положительное число
 result = 0
 mult = 1
 
-
 while num > 0:
     result = result + num % 2 * mult
     num = num // 2
