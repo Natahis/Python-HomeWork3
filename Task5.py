@@ -9,10 +9,13 @@ def fib(num):
     if num in [1,2]:
         return 1
     else:
-        return fib(num - 1) + fib(num - 2)
+        if num > 0:
+            return fib(num - 1) + fib(num - 2)
+        else:
+            return fib(num + 2) - fib(num + 1)     
 
 list = []
-for i in range(1, num+1):
+for i in range(-num, num+1):
     list.append(fib(i))
 
 fib(num)
