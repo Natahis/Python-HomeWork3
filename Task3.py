@@ -15,12 +15,21 @@
 # print(round(max_list - min_list,2))
 
 
-my_list = [1.1, 1.2, 3.1, 5, 10.01]
-new_list = []
-for i in my_list:
-    if i % 1 != 0:
-        new_list.append(round(i % 1, 2))
-max_list = max(new_list)
-min_list = min(new_list)
-print((my_list), end= " => ")
-print(round(max_list - min_list,2))
+# my_list = [1.1, 1.2, 3.1, 5, 10.01]
+# new_list = []
+# for i in my_list:
+#     if i % 1 != 0:
+#         new_list.append(round(i % 1, 2))
+# max_list = max(new_list)
+# min_list = min(new_list)
+# print((my_list), end= " => ")
+# print(round(max_list - min_list,2))
+
+lst = [1.1, 1.2, 3.1, 5, 10.01]
+
+lst = [round(val % 1, 2) for val in lst]
+print(lst)
+rev_result = max(lst) - min(lst)
+print(max(lst))
+print(min(lst))
+print( rev_result)
